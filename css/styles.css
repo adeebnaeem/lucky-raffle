@@ -380,10 +380,6 @@ h2 {
     width: 10px;
 }
 
-.walletconnect-modal__base {
-    max-width: 350px !important;
-}
-
 .lg-heder-button {
     display: none;
 }
@@ -397,6 +393,68 @@ h2 {
 .footer .logo {
     height: 75px;
 }
+
+
+/* Wallet modal */
+
+.walletconnect-modal__base {
+    max-width: 440px !important;
+    color: #fff;
+    background-color: #21193a !important;
+    top: 54% !important;
+}
+
+.walletconnect-modal__mobile__toggle_selector,
+.walletconnect-modal__header p,
+.walletconnect-modal__header .walletconnect-modal__headerLogo {
+    display: none !important;
+}
+
+.walletconnect-qrcode__text {
+    color: #fff;
+}
+
+.walletconnect-modal__header,
+.walletconnect-modal__mobile__toggle {
+    position: absolute !important;
+    top: -8% !important;
+}
+
+.walletconnect-modal__mobile__toggle {
+    background-color: transparent !important;
+    color: #fff;
+}
+
+.walletconnect-modal__mobile__toggle a {
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.walletconnect-modal__mobile__toggle.right__selected a:nth-of-type(1),
+.walletconnect-modal__mobile__toggle a:nth-of-type(2),
+.walletconnect-modal__mobile__toggle a {
+    background-color: transparent;
+}
+
+.walletconnect-modal__mobile__toggle.right__selected a:nth-of-type(2),
+.walletconnect-modal__mobile__toggle a:nth-of-type(1) {
+    background-color: #191326 !important;
+}
+
+.walletconnect-qrcode__base svg path {
+    fill: none !important;
+    stroke: #fff !important;
+}
+
+.walletconnect-modal__base .walletconnect-connect__buttons__wrapper__wrap {
+    max-height: 50vh !important;
+    overflow-y: scroll;
+}
+
+
+/* --media queries--- */
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1400px) {
     .tab-btn-sec .cardSwiper .innerCard {
@@ -475,42 +533,7 @@ h2 {
     .rules-section .inner-cont li {
         font-size: 18px;
     }
-}
-
-
-/* Wallet modal */
-
-.walletconnect-modal__mobile__toggle_selector,
-.walletconnect-modal__header p,
-.walletconnect-modal__header .walletconnect-modal__headerLogo {
-    display: none !important;
-}
-
-.walletconnect-modal__header,
-.walletconnect-modal__mobile__toggle {
-    position: absolute;
-    top: -10%;
-}
-
-.walletconnect-modal__mobile__toggle {
-    background-color: transparent;
-    color: #fff;
-}
-
-.walletconnect-modal__mobile__toggle a {
-    padding: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 16px 16px 0px 0px;
-}
-
-.walletconnect-modal__mobile__toggle.right__selected a:nth-of-type(1),
-.walletconnect-modal__mobile__toggle a:nth-of-type(2),
-.walletconnect-modal__mobile__toggle a {
-    background-color: transparent;
-}
-
-.walletconnect-modal__mobile__toggle.right__selected a:nth-of-type(2),
-.walletconnect-modal__mobile__toggle a:nth-of-type(1) {
-    background-color: #191326;
+    .walletconnect-modal__base {
+        max-width: 98vw !important;
+    }
 }
