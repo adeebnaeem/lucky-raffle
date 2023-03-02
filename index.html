@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Enter the Lucky Raffle for a chance to win 1 BNB! Get 25 tickets for only 0.05 BNB each. Join now and try your luck!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <title>Lucky Raffle</title>
+    <link rel="shortcut icon" href="./assests/logo.png" type="image/x-icon">
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Wallet Connect -->
+    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script type="text/javascript" src="https://unpkg.com/evm-chains@0.2.0/dist/umd/index.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+    <script type="text/javascript" src="https://unpkg.com/fortmatic@2.0.6/dist/fortmatic.js"></script>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Krona+One:300,400,600,700&amp;lang=en" />
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Section starts -->
+    <header class="header">
+        <div class="header-links head_width">
+            <a href="https://www.luckybots.info" target="_blank"><i class="bi bi-house"></i></a>
+            <a href="https://t.me/Lucky_Portal" target="_blank"><i class="bi bi-telegram lg-telegram"></i></a>
+        </div>
+        <h1 class="headingnav">LUCKY</span> RAFFLE</h1>
+        <div class="header-button head_width d-none d-lg-block">
+            <button id="btn-connect" class="btn-header">
+                Connect Wallet
+            </button>
+        </div>
+        <div class="header-links head_width d-block d-lg-none">
+            <a href="https://t.me/Lucky_Portal" target="_blank"><i class="bi bi-telegram"></i></a>
+        </div>
+    </header>
+    <!-- Section ends -->
+
+    <!-- Section starts -->
+    <section class="hero-section">
+        <div class="container-lg">
+            <div class="text-container position-relative">
+                <img class="shap-one" src="./assests/banner_shape01.3602893977c2a623f11b.png" alt="" draggable="false">
+                <div class="top-txt">
+                    <h1>Enter for a <span class="blueTxt">Chance to Win!</span></h1>
+                    <h1>25 Tickets for Only 0.05 BNB Each</h1>
+                    <h1>One Lucky Wallet Wins 1 BNB!</h1><br>
+                    <div class="header-button head_width mt-2 lg-heder-button">
+                        <button id="btn-connect" class="btn-header">
+                            Connect Wallet
+                        </button>
+                    </div>
+                </div>
+                <img class="shap-two" src="./assests/banner_shape03.e4ec4646320325630dfe.png" alt="" draggable="false">
+            </div>
+        </div>
+        <!-- shapers -->
+
+        <div class="custom-shape-divider-bottom-1677717886">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <!-- Section ends -->
+
+    <!-- Section starts -->
+    <section class="tab-btn-sec my-5 py-lg-5 py-md-0">
+        <h2 class="rules-heding position-relative mt-3 mb-5">Purchase Ticket</h2>
+        <div class="container-lg">
+            <!-- Swiper -->
+            <div class="swiper cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide p-3">
+                        <div class="innerCard d-flex flex-column justify-content-between">
+                            <h1 class="mt-md-5 mt-4">Micro Raffle</h1>
+                            <h3 class="factor">WIN 8X1</h3>
+                            <ul>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> 10 Tickets
+                                </li>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> 1 in 10 Win
+                                </li>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Just 0.02 BNB per Ticket
+                                </li>
+                                <li class="themeTxt mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Prize Amount: 0.16 BNB
+                                </li>
+                            </ul>
+                            <button class="buyBtn">
+                               Purchase
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-3">
+                        <div class="innerCard d-flex flex-column justify-content-between lucky">
+                            <span class="badge">
+                                Most Popular
+                            </span>
+                            <h1 class="mt-md-5 mt-4">Lucky Raffle</h1>
+                            <h3 class="factor">WIN 20X1</h3>
+                            <ul>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> 25 Tickets
+                                </li>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> 1 in 25 Win
+                                </li>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Just 0.05 BNB per Ticket
+                                </li>
+                                <li class="themeTxt mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Prize Amount: 1.0 BNB
+                                </li>
+                            </ul>
+                            <button class="buyBtn">
+                               Purchase
+                            </button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide p-3">
+                        <div class="innerCard d-flex flex-column justify-content-between">
+                            <h1 class="mt-md-5 mt-4">Mega Raffle</h1>
+                            <h3 class="factor">WIN 4X1</h3>
+                            <ul>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> 5 Tickets
+                                </li>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> 1 in 5 Win
+                                </li>
+                                <li class="mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Just 1.0 BNB per Ticket
+                                </li>
+                                <li class="themeTxt mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Prize Amount: 1.0 BNB
+                                </li>
+                                <li class="mt-2 mb-1 position-relative">
+                                    <i class="bi bi-check2"></i> 1.0 BNB per 5 Tickets (Wins 4.0 BNB)
+                                </li>
+                                <li class="themeTxt mb-2 position-relative">
+                                    <i class="bi bi-check2"></i> Prize Amount: 5.0 BNB
+                                </li>
+                            </ul>
+                            <button class="buyBtn">
+                               Purchase
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- Section ends -->
+
+    <!-- Section starts -->
+    <section class="rules-section">
+        <div class="container-lg">
+            <h2 class="rules-heding position-relative">How to Play</h2>
+            <ol class="inner-cont">
+                <li>
+                    Click on the "Connect Wallet" button.
+
+                </li>
+                <li>
+                    Trust Wallet users, click Trust Wallet icon, and make sure you select BSC network
+
+                </li>
+                <li>
+                    Click on the "Purchase Ticket" button to buy your raffle ticket(s).
+
+                </li>
+                <li>
+                    Once all tickets for a raffle are sold, the BSC smart contract will randomly select a winner
+
+                </li>
+                <li>
+                    Winners will automatically recive their BNB payment
+
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- Section ends -->
+
+
+    <!-- Section starts -->
+    <footer class="footer mt-5">
+        <div class="container-lg d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <img src="./assests/logo.png" height="100%" alt="logo">
+            </div>
+            <p class="copyright">
+                Copyright © 2023 LUCKYBOTS. All Rights Reserved.
+            </p>
+            <a id="trust-btn" class="trust-wallet-button" href="https://link.trustwallet.com/open_url?coin_id=60&url=https://luckybots.us">
+                <img src="./assests/horizontal_blue.png" alt="" draggable="false">
+            </a>
+        </div>
+    </footer>
+    <!-- Section ends -->
+
+    <!-- Connect wallet -->
+    <script type="module" src="./js/purchase.js"></script>
+    <script type="module" src="./js/info.js"></script>
+    <script type="module" src="./js/connect.js"></script>
+    <script type="module" src="disclaimer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <!-- bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var cardSwiper = new Swiper(".cardSwiper", {
+            slidesPerView: 1.1,
+            spaceBetween: 5,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
